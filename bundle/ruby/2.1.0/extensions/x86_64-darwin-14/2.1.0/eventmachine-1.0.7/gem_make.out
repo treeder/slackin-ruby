@@ -1,0 +1,13 @@
+/usr/local/Cellar/ruby/2.1.3_1/bin/ruby -r ./siteconf20150612-36741-1c0cq26.rb extconf.rb 
+creating Makefile
+
+make "DESTDIR=" clean
+
+make "DESTDIR="
+compiling mapper.cpp
+compiling rubymain.cpp
+linking shared-object fastfilereaderext.bundle
+
+make "DESTDIR=" install
+/usr/bin/install -c -m 0755 fastfilereaderext.bundle ./.gem.20150612-36741-18wck21
+installing default fastfilereaderext libraries

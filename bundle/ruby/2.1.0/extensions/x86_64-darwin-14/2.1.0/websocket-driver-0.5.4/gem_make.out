@@ -1,0 +1,28 @@
+/usr/local/Cellar/ruby/2.1.3_1/bin/ruby -r ./siteconf20150612-36741-ybljqt.rb extconf.rb 
+creating Makefile
+
+make "DESTDIR=" clean
+
+make "DESTDIR="
+compiling websocket_mask.c
+websocket_mask.c:32:15: warning: implicit conversion loses integer precision: 'long' to 'int' [-Wshorten-64-to-32]
+  n         = RSTRING_LEN(payload);
+            ~ ^~~~~~~~~~~~~~~~~~~~
+/usr/local/Cellar/ruby/2.1.3_1/include/ruby-2.1.0/ruby/ruby.h:843:6: note: expanded from macro 'RSTRING_LEN'
+     RSTRING_EMBED_LEN(str) : \
+     ^~~~~~~~~~~~~~~~~~~~~~
+/usr/local/Cellar/ruby/2.1.3_1/include/ruby-2.1.0/ruby/ruby.h:839:6: note: expanded from macro 'RSTRING_EMBED_LEN'
+     (long)((RBASIC(str)->flags >> RSTRING_EMBED_LEN_SHIFT) & \
+     ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+websocket_mask.c:32:15: warning: implicit conversion loses integer precision: 'long' to 'int' [-Wshorten-64-to-32]
+  n         = RSTRING_LEN(payload);
+            ~ ^~~~~~~~~~~~~~~~~~~~
+/usr/local/Cellar/ruby/2.1.3_1/include/ruby-2.1.0/ruby/ruby.h:844:28: note: expanded from macro 'RSTRING_LEN'
+     RSTRING(str)->as.heap.len)
+     ~~~~~~~~~~~~~~~~~~~~~~^~~
+2 warnings generated.
+linking shared-object websocket_mask.bundle
+
+make "DESTDIR=" install
+/usr/bin/install -c -m 0755 websocket_mask.bundle ./.gem.20150612-36741-1b9tkwj
+installing default websocket_mask libraries

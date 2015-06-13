@@ -1,0 +1,13 @@
+/usr/local/Cellar/ruby/2.1.3_1/bin/ruby -r ./siteconf20150612-36117-xnzsrn.rb extconf.rb 
+checking for main() in -lstdc++... yes
+creating Makefile
+
+make "DESTDIR=" clean
+
+make "DESTDIR="
+compiling unf.cc
+linking shared-object unf_ext.bundle
+
+make "DESTDIR=" install
+/usr/bin/install -c -m 0755 unf_ext.bundle ./.gem.20150612-36117-6o42xv
+installing default unf_ext libraries

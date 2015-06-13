@@ -1,0 +1,10 @@
+/usr/local/Cellar/ruby/2.1.3_1/bin/ruby -r ./siteconf20150612-36117-163kmye.rb extconf.rb 
+creating Makefile
+
+make "DESTDIR=" clean
+
+make "DESTDIR="
+make: Nothing to be done for `all'.
+
+make "DESTDIR=" install
+installing default libraries
